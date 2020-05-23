@@ -52,7 +52,7 @@ The following aspects of a language must be kept in mind while using it:
 
 
 
-##STRINGS</br>
+###### STRINGS</br>
 **A string is a series of characters surrounded by ' or "**</br>
 long_string = "I'll catch you if you fall - The Floor"
  
@@ -95,7 +95,8 @@ print(long_string.strip())
 **Split a string into a list based on the delimiter you provide**</br>
 quote_list = long_string.split(" ")
 print(quote_list)
-##FILE I/O -------------
+</br>
+###### FILE I/O -------------</br>
  
 **Overwrite or create a file for writing**</br>
 test_file = open("test.txt", "wb")
@@ -123,7 +124,7 @@ print(text_in_file)
 **Delete the file**</br>
 os.remove("test.txt")
 
-##CLASSES AND OBJECTS -------------</br>
+###### CLASSES AND OBJECTS -------------</br>
 **The concept of OOP allows us to model real world things using code**</br>
 **Every object has attributes (color, height, weight) which are object variables**</br>
 **Every object has abilities (walk, talk, eat) which are object functions**</br>
@@ -176,13 +177,12 @@ class Animal:
  
 **How to create a Animal object**</br>
 cat = Animal('Whiskers', 33, 10, 'Meow')
- 
 print(cat.toString())
  
 **You can't access this value directly because it is private**</br>
 print(cat.__name)
  
-**INHERITANCE -------------**</br>
+###### INHERITANCE -------------</br>
 **You can inherit all of the variables and methods from another class**</br>
  
 class Dog(Animal):
