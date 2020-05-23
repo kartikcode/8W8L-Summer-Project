@@ -52,81 +52,81 @@ The following aspects of a language must be kept in mind while using it:
 
 
 
-##STRINGS
-**A string is a series of characters surrounded by ' or "**
+##STRINGS</br>
+**A string is a series of characters surrounded by ' or "**</br>
 long_string = "I'll catch you if you fall - The Floor"
  
-**Retrieve the first 4 characters**
+**Retrieve the first 4 characters**</br>
 print(long_string[0:4])
  
-**Get the last 5 characters**
+**Get the last 5 characters**</br>
 print(long_string[-5:])
  
-**Everything up to the last 5 characters**
+**Everything up to the last 5 characters**</br>
 print(long_string[:-5])
  
-**Concatenate part of a string to another**
+**Concatenate part of a string to another**</br>
 print(long_string[:4] + " be there")
  
-**String formatting**
+**String formatting**</br>
 print("%c is my %s letter and my number %d number is %.5f" % ('X', 'favorite', 1, .14))
  
-**Capitalizes the first letter**
+**Capitalizes the first letter**</br>
 print(long_string.capitalize())
  
-**Returns the index of the start of the string case sensitive**
+**Returns the index of the start of the string case sensitive**</br>
 print(long_string.find("Floor"))
  
-**Returns true if all characters are letters ' isn't a letter**
+**Returns true if all characters are letters ' isn't a letter**</br>
 print(long_string.isalpha())
  
-**Returns true if all characters are numbers**
+**Returns true if all characters are numbers**</br>
 print(long_string.isalnum())
  
-**Returns the string length**
+**Returns the string length**</br>
 print(len(long_string))
  
-**Replace the first word with the second (Add a number to replace more)**
+**Replace the first word with the second (Add a number to replace more)**</br>
 print(long_string.replace("Floor", "Ground"))
  
-**Remove white space from front and end**
+**Remove white space from front and end**</br>
 print(long_string.strip())
 
-**Split a string into a list based on the delimiter you provide**
+**Split a string into a list based on the delimiter you provide**</br>
 quote_list = long_string.split(" ")
 print(quote_list)
 ##FILE I/O -------------
  
-**Overwrite or create a file for writing**
+**Overwrite or create a file for writing**</br>
 test_file = open("test.txt", "wb")
  
-**Get the file mode used**
+**Get the file mode used**</br>
 print(test_file.mode)
  
-**Get the files name**
+**Get the files name**</br>
 print(test_file.name)
  
-**Write text to a file with a newline**
+**Write text to a file with a newline**</br>
 test_file.write(bytes("Write me to the file\n", 'UTF-8'))
  
-**Close the file**
+**Close the file**</br>
 test_file.close()
  
-**Opens a file for reading and writing**
+**Opens a file for reading and writing**</br>
 test_file = open("test.txt", "r+")
  
-**Read text from the file**
+**Read text from the file**</br>
 text_in_file = test_file.read()
  
 print(text_in_file)
  
-**Delete the file**
+**Delete the file**</br>
 os.remove("test.txt")
 
 ##CLASSES AND OBJECTS -------------
-**The concept of OOP allows us to model real world things using code**
-**Every object has attributes (color, height, weight) which are object variables**
-**Every object has abilities (walk, talk, eat) which are object functions**
+**The concept of OOP allows us to model real world things using code**</br>
+**Every object has attributes (color, height, weight) which are object variables**</br>
+**Every object has abilities (walk, talk, eat) which are object functions**</br>
  
 class Animal:
     *** None signifies the lack of a value
@@ -174,16 +174,16 @@ class Animal:
     def toString(self):
         return "{} is {} cm tall and {} kilograms and says {}".format(self.__name, self.__height, self.__weight, self.__sound)
  
-**How to create a Animal object**
+**How to create a Animal object**</br>
 cat = Animal('Whiskers', 33, 10, 'Meow')
  
 print(cat.toString())
  
-**You can't access this value directly because it is private**
+**You can't access this value directly because it is private**</br>
 print(cat.__name)
  
 **INHERITANCE -------------**
-**You can inherit all of the variables and methods from another class**
+**You can inherit all of the variables and methods from another class**</br>
  
 class Dog(Animal):
     __owner = None
@@ -220,7 +220,7 @@ spot = Dog("Spot", 53, 27, "Ruff", "Derek")
  
 print(spot.toString())
  
-**Polymorphism allows use to refer to objects as their super class and the correct functions are called automatically**
+**Polymorphism allows use to refer to objects as their super class and the correct functions are called automatically**</br>
  
 class AnimalTesting:
     def get_type(self, animal):
