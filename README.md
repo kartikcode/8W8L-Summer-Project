@@ -123,7 +123,7 @@ print(text_in_file)
 **Delete the file**</br>
 os.remove("test.txt")
 
-##CLASSES AND OBJECTS -------------
+##CLASSES AND OBJECTS -------------</br>
 **The concept of OOP allows us to model real world things using code**</br>
 **Every object has attributes (color, height, weight) which are object variables**</br>
 **Every object has abilities (walk, talk, eat) which are object functions**</br>
@@ -182,7 +182,7 @@ print(cat.toString())
 **You can't access this value directly because it is private**</br>
 print(cat.__name)
  
-**INHERITANCE -------------**
+**INHERITANCE -------------**</br>
 **You can inherit all of the variables and methods from another class**</br>
  
 class Dog(Animal):
