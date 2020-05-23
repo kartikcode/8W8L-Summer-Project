@@ -47,82 +47,81 @@ The following aspects of a language must be kept in mind while using it:
 - There are 5 data types: Numbers, Strings, List, Tuple, Dictionary.
 - " ** " >exponential calculation, " // " Floor division
 ` Dicts can't be join with '+'.
-*** STRINGS -------------
-*** A string is a series of characters surrounded by ' or "
+*** STRINGS ------------- ***
+*** A string is a series of characters surrounded by ' or " ***
 long_string = "I'll catch you if you fall - The Floor"
  
-*** Retrieve the first 4 characters
+*** Retrieve the first 4 characters***
 print(long_string[0:4])
  
-*** Get the last 5 characters
+*** Get the last 5 characters***
 print(long_string[-5:])
  
-*** Everything up to the last 5 characters
+*** Everything up to the last 5 characters***
 print(long_string[:-5])
  
-*** Concatenate part of a string to another
+*** Concatenate part of a string to another***
 print(long_string[:4] + " be there")
  
-*** String formatting
+*** String formatting***
 print("%c is my %s letter and my number %d number is %.5f" % ('X', 'favorite', 1, .14))
  
-*** Capitalizes the first letter
+*** Capitalizes the first letter***
 print(long_string.capitalize())
  
-*** Returns the index of the start of the string
-*** case sensitive
+*** Returns the index of the start of the string case sensitive***
 print(long_string.find("Floor"))
  
-*** Returns true if all characters are letters ' isn't a letter
+*** Returns true if all characters are letters ' isn't a letter***
 print(long_string.isalpha())
  
-*** Returns true if all characters are numbers
+*** Returns true if all characters are numbers***
 print(long_string.isalnum())
  
-*** Returns the string length
+*** Returns the string length***
 print(len(long_string))
  
-*** Replace the first word with the second (Add a number to replace more)
+*** Replace the first word with the second (Add a number to replace more)***
 print(long_string.replace("Floor", "Ground"))
  
-*** Remove white space from front and end
+*** Remove white space from front and end***
 print(long_string.strip())
  
-*** Split a string into a list based on the delimiter you provide
+*** Split a string into a list based on the delimiter you provide***
 quote_list = long_string.split(" ")
 print(quote_list)
-*** FILE I/O -------------
+*** FILE I/O -------------***
  
-*** Overwrite or create a file for writing
+*** Overwrite or create a file for writing***
 test_file = open("test.txt", "wb")
  
-*** Get the file mode used
+*** Get the file mode used***
 print(test_file.mode)
  
-*** Get the files name
+*** Get the files name***
 print(test_file.name)
  
-*** Write text to a file with a newline
+*** Write text to a file with a newline***
 test_file.write(bytes("Write me to the file\n", 'UTF-8'))
  
-*** Close the file
+*** Close the file***
 test_file.close()
  
-*** Opens a file for reading and writing
+*** Opens a file for reading and writing***
 test_file = open("test.txt", "r+")
  
-*** Read text from the file
+*** Read text from the file***
 text_in_file = test_file.read()
  
 print(text_in_file)
  
-*** Delete the file
+*** Delete the file***
 os.remove("test.txt")
 
 CLASSES AND OBJECTS -------------
-*** The concept of OOP allows us to model real world things using code
-*** Every object has attributes (color, height, weight) which are object variables
-*** Every object has abilities (walk, talk, eat) which are object functions
+*** The concept of OOP allows us to model real world things using code***
+*** Every object has attributes (color, height, weight) which are object variables***
+*** Every object has abilities (walk, talk, eat) which are object functions***
  
 class Animal:
     *** None signifies the lack of a value
@@ -170,16 +169,16 @@ class Animal:
     def toString(self):
         return "{} is {} cm tall and {} kilograms and says {}".format(self.__name, self.__height, self.__weight, self.__sound)
  
-*** How to create a Animal object
+*** How to create a Animal object***
 cat = Animal('Whiskers', 33, 10, 'Meow')
  
 print(cat.toString())
  
-*** You can't access this value directly because it is private
-***print(cat.__name)
+*** You can't access this value directly because it is private***
+print(cat.__name)
  
-*** INHERITANCE -------------
-*** You can inherit all of the variables and methods from another class
+*** INHERITANCE -------------***
+*** You can inherit all of the variables and methods from another class***
  
 class Dog(Animal):
     __owner = None
@@ -200,12 +199,12 @@ class Dog(Animal):
     def get_type(self):
         print ("Dog")
  
-    *** We can overwrite functions in the super class
+    *** We can overwrite functions in the super class***
     def toString(self):
         return "{} is {} cm tall and {} kilograms and says {}. His owner is {}".format(self.get_name(), self.get_height(), self.get_weight(), self.get_sound(), self.__owner)
  
-    *** You don't have to require attributes to be sent
-    *** This allows for method overloading
+    *** You don't have to require attributes to be sent***
+    *** This allows for method overloading***
     def multiple_sounds(self, how_many=None):
         if how_many is None:
             print(self.get_sound)
@@ -216,8 +215,7 @@ spot = Dog("Spot", 53, 27, "Ruff", "Derek")
  
 print(spot.toString())
  
-*** Polymorphism allows use to refer to objects as their super class
-*** and the correct functions are called automatically
+*** Polymorphism allows use to refer to objects as their super class and the correct functions are called automatically***
  
 class AnimalTesting:
     def get_type(self, animal):
