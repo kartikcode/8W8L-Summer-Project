@@ -9,6 +9,7 @@ The main aim of this project is to get familiar with different languages and pro
 - [Harish Adsule](https://github.com/harishss3)
 - [Kartikeya Gupta](https://github.com/kartikcode)
 - [Tej Prakash](https://github.com/tej4826)
+
 ### *General Concepts*
 
 The following aspects of a language must be kept in mind while using it:
@@ -43,196 +44,22 @@ The following aspects of a language must be kept in mind while using it:
 ******************************************
 ### *Python*
 
-
+- Python is an interpreted, high-level, general purpose programming language.
 - import module is used to make speciality functions available.
+- Python's design philosophy emphasizes code readability with its notable use of significant whitespace.
 - print() outputs the data on the screen.
 - There are 5 data types: Numbers, Strings, List, Tuple, Dictionary.
 - " ** " >exponential calculation, " // " Floor division
 - Dicts can't be join with '+'.
-
-
-
-###### STRINGS</br>
-**A string is a series of characters surrounded by ' or "**</br>
-long_string = "I'll catch you if you fall - The Floor"
- 
-**Retrieve the first 4 characters**</br>
-print(long_string[0:4])
- 
-**Get the last 5 characters**</br>
-print(long_string[-5:])
- 
-**Everything up to the last 5 characters**</br>
-print(long_string[:-5])
- 
-**Concatenate part of a string to another**</br>
-print(long_string[:4] + " be there")
- 
-**String formatting**</br>
-print("%c is my %s letter and my number %d number is %.5f" % ('X', 'favorite', 1, .14))
- 
-**Capitalizes the first letter**</br>
-print(long_string.capitalize())
- 
-**Returns the index of the start of the string case sensitive**</br>
-print(long_string.find("Floor"))
- 
-**Returns true if all characters are letters ' isn't a letter**</br>
-print(long_string.isalpha())
- 
-**Returns true if all characters are numbers**</br>
-print(long_string.isalnum())
- 
-**Returns the string length**</br>
-print(len(long_string))
- 
-**Replace the first word with the second (Add a number to replace more)**</br>
-print(long_string.replace("Floor", "Ground"))
- 
-**Remove white space from front and end**</br>
-print(long_string.strip())
-
-**Split a string into a list based on the delimiter you provide**</br>
-quote_list = long_string.split(" ")
-print(quote_list)
-</br>
-###### FILE I/O -------------</br>
- 
-**Overwrite or create a file for writing**</br>
-test_file = open("test.txt", "wb")
- 
-**Get the file mode used**</br>
-print(test_file.mode)
- 
-**Get the files name**</br>
-print(test_file.name)
- 
-**Write text to a file with a newline**</br>
-test_file.write(bytes("Write me to the file\n", 'UTF-8'))
- 
-**Close the file**</br>
-test_file.close()
- 
-**Opens a file for reading and writing**</br>
-test_file = open("test.txt", "r+")
- 
-**Read text from the file**</br>
-text_in_file = test_file.read()
- 
-print(text_in_file)
- 
-**Delete the file**</br>
-os.remove("test.txt")
+- Python interpreter and the extensive standard library are available in source or binary form without charge for all major platforms, and can be freely distributed.
 
 ###### CLASSES AND OBJECTS -------------</br>
 **The concept of OOP allows us to model real world things using code**</br>
-**Every object has attributes (color, height, weight) which are object variables**</br>
-**Every object has abilities (walk, talk, eat) which are object functions**</br>
- 
-class Animal:
-    *** None signifies the lack of a value
-    *** You can make a variable private by starting it with __
-    __name = None
-    __height = None
-    __weight = None
-    __sound = None
- 
-    *** The constructor is called to set up or initialize an object
-    *** self allows an object to refer to itself inside of the class
-    def __init__(self, name, height, weight, sound):
-        self.__name = name
-        self.__height = height
-        self.__weight = weight
-        self.__sound = sound
- 
-    def set_name(self, name):
-        self.__name = name
- 
-    def set_height(self, height):
-        self.__height = height
- 
-    def set_weight(self, height):
-        self.__height = height
- 
-    def set_sound(self, sound):
-        self.__sound = sound
- 
-    def get_name(self):
-        return self.__name
- 
-    def get_height(self):
-        return str(self.__height)
- 
-    def get_weight(self):
-        return str(self.__weight)
- 
-    def get_sound(self):
-        return self.__sound
- 
-    def get_type(self):
-        print("Animal")
- 
-    def toString(self):
-        return "{} is {} cm tall and {} kilograms and says {}".format(self.__name, self.__height, self.__weight, self.__sound)
- 
-**How to create a Animal object**</br>
-cat = Animal('Whiskers', 33, 10, 'Meow')
-print(cat.toString())
- 
+**Every object has attributes like (color, height, weight) which are object variables**</br>
+**Every object has abilities like (walk, talk, eat) which are object functions**</br>
 **You can't access this value directly because it is private**</br>
-print(cat.__name)
- 
-###### INHERITANCE -------------</br>
 **You can inherit all of the variables and methods from another class**</br>
- 
-class Dog(Animal):
-    __owner = None
- 
-    def __init__(self, name, height, weight, sound, owner):
-        self.__owner = owner
-        self.__animal_type = None
- 
-        *** How to call the super class constructor
-        super(Dog, self).__init__(name, height, weight, sound)
- 
-    def set_owner(self, owner):
-        self.__owner = owner
- 
-    def get_owner(self):
-        return self.__owner
- 
-    def get_type(self):
-        print ("Dog")
- 
-    *** We can overwrite functions in the super class***
-    def toString(self):
-        return "{} is {} cm tall and {} kilograms and says {}. His owner is {}".format(self.get_name(), self.get_height(), self.get_weight(), self.get_sound(), self.__owner)
- 
-    *** You don't have to require attributes to be sent***
-    *** This allows for method overloading***
-    def multiple_sounds(self, how_many=None):
-        if how_many is None:
-            print(self.get_sound)
-        else:
-            print(self.get_sound() * how_many)
- 
-spot = Dog("Spot", 53, 27, "Ruff", "Derek")
- 
-print(spot.toString())
- 
 **Polymorphism allows use to refer to objects as their super class and the correct functions are called automatically**</br>
- 
-class AnimalTesting:
-    def get_type(self, animal):
-        animal.get_type()
- 
-test_animals = AnimalTesting()
- 
-test_animals.get_type(cat)
-test_animals.get_type(spot)
- 
-spot.multiple_sounds(4)
-
 
 ***********************************
 ### *Ruby*
