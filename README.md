@@ -89,7 +89,7 @@ Following are the tasks given till now:
 - Harish Adsule  : https://github.com/harishss3/8l8w
 - Pranay Agarwal: https://github.com/pranay12345678/8lang
 - Tushar Kumar: https://github.com/ktushar585/Summercamp
-- Tej Pratap Singh: https://github.com/tej4826/Eight_Weeks_8L
+- Tej Prakash: https://github.com/tej4826/Eight_Weeks_8L
 
 ************************************
 ### Contributed by: </br>
