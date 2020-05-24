@@ -91,6 +91,8 @@ Following are the tasks given till now:
 - Kartikeya Gupta: https://github.com/kartikcode/8W8L
 - Harish Adsule  : https://github.com/harishss3/8l8w
 - Tushar Kumar : https://github.com/ktushar585/Summer8L8W
+- Pranay Agarwal: https://github.com/pranay12345678/8lang
+- Tej Prakash: https://github.com/tej4826/Eight_Weeks_8L
 
 ************************************
 ### Contributed by: </br>
