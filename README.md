@@ -93,6 +93,7 @@ Following are the tasks given till now:
 - Tushar Kumar : https://github.com/ktushar585/Summer8L8W
 - Pranay Agarwal: https://github.com/pranay12345678/8lang
 - Tej Prakash: https://github.com/tej4826/Eight_Weeks_8L
+- Divyansh Garg: https://github.com/divigarg/8-in-8
 
 ************************************
 ### Contributed by: </br>
