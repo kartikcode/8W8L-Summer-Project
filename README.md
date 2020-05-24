@@ -57,7 +57,9 @@ Polymorphism allows use to refer to objects as their super class and the correct
 
 ***********************************
 ### *Ruby*
-
+***About the language*** </br> As the name suggests a shining gemstone Ruby,so it is really a sparkling programming language.It is very much similar to python and is a pure object oriented, interpreted,high level,open-source language.Most of the syntax is highly similar to python with some of the core differences such as there's puts"" used in place of print().The way of taking input in between the execution of the code is the best part of this language i.e. using the prompt tool.Being a general purpose programmimg language ,it is mainly used for building web applications and the best implementation of RUBY is the use of the web framework Ruby on Rails. Ruby was developed by Yukihiro during the 90's era in Japan.It is so much popular because of its plain and simple syntax. Besides being dynamically typed,it is also a strongly-typed and also a inferred language.</br></br>
+***In this project*** </br> Here the main aim is to introduce this beautiful language to an interested beginner with basic coding practices and explore the depth of this language.More on this language can be learnt by reffering to the book "Learn Ruby The Hard Way" by Zed Shaw and Rob Sobers.</br></br>
+***Relevant Links***</br>Docs: https://www.ruby-lang.org/en/documentation</br>
 ************************************
 ### *Haskell*
 ***About the language*** </br>Haskell is a purely Functional programming language with inferred, strong and static type discipline.
@@ -81,16 +83,19 @@ Docs: https://docs.scala-lang.org/tour/tour-of-scala.html </br>
 Following are the tasks given till now:
 
 1.[Python] To implement basic command line utilities. </br>
-2.[Haskell] To implement some simple functions.
+2.[Haskell] To implement some simple functions.</br>
+3.[Ruby] To implement basic coding concepts.
 
 ************************************
 ### Link to Repositories of the Team Members
 - Kartikeya Gupta: https://github.com/kartikcode/8W8L
 - Harish Adsule  : https://github.com/harishss3/8l8w
+- Tushar Kumar : https://github.com/ktushar585/Summer8L8W
 
 ************************************
 ### Contributed by: </br>
 - [Harish Adsule](https://github.com/harishss3)
 - [Kartikeya Gupta](https://github.com/kartikcode)
 - [Tej Prakash](https://github.com/tej4826)
+- [Tushar Kumar](https://github.com/ktushar585)
 
