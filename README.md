@@ -82,9 +82,21 @@ Docs: https://docs.scala-lang.org/tour/tour-of-scala.html </br>
 
 Following are the tasks given till now:
 
-1.[Python] To implement basic command line utilities. </br>
-2.[Haskell] To implement some simple functions.</br>
-3.[Ruby] To implement basic coding concepts.
+1.[Python] 
+- To implement basic command line utilities. 
+- Automating taks using python libraries.
+
+2.[Haskell]
+- To implement some simple functions.
+- Implement a cipher function.
+- K-means implementation.
+
+4.[Ruby] 
+- To implement basic coding concepts.
+
+5.[Scala]
+- Learn about the theoretical paradigms.
+- Implement functions for S-99 problemset.
 
 ************************************
 ### Link to Repositories of the Team Members
